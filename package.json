@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "webpack-dev-server"
+    "dev": "webpack-dev-server --open"
   },
   "author": "",
   "license": "ISC",
@@ -13,6 +13,7 @@
     "@babel/preset-env": "^7.9.6",
     "@babel/preset-react": "^7.9.4",
     "antd": "^4.2.4",
+    "antd-img-crop": "^3.2.0",
     "babel-loader": "^8.1.0",
     "css-loader": "^3.5.3",
     "react": "^16.13.1",

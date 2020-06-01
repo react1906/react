@@ -1,7 +1,7 @@
 import React from 'react'
 import 'antd/dist/antd.css';
 
-import {HashRouter as Router,Link} from 'react-router-dom'
+import {HashRouter as Router,Link,withRouter} from 'react-router-dom'
 
 import { Menu } from 'antd';
 import {
@@ -23,8 +23,8 @@ import '../css/style.css'
 
 
 class Sider extends React.Component {
-    constructor(){
-        super()
+    constructor(props){
+        super(props)
         this.state = {
             data:[
                 {
@@ -86,11 +86,32 @@ class Sider extends React.Component {
                 }
             ],
             mode: 'inline',
+            keys:'/'
         }
+    }
+    componentDidMount() {
+        if(this.props.location.pathname) {
+            this.setState({
+                keys: this.props.location.pathname
+            })
+        }
+    }
+
+    handleClick (e) {
+      this.setState({
+        keys: e.key,
+      })
     }
     render() {
         return (
-        <>
+        <div style={{
+            overflow: 'auto',
+            height: '100vh',
+            position: 'fixed',
+            left: 0,
+            width:200,
+            zIndex:'9999999'
+        }}>
             <div style={{width:'100%',backgroundColor:'rgba(236, 239, 244, 1)',paddingBottom:'12px',paddingTop:'15px'}}>
                 <div style={{backgroundColor:'cornflowerblue',width:60,height:60,borderRadius:'5px',lineHeight:'70px',textAlign:'center',marginLeft:'70px',marginBottom:'15px'}}>
                     <SettingOutlined style={{fontSize:'28px',color:'#fff'}}/>
@@ -99,12 +120,14 @@ class Sider extends React.Component {
             </div>
             <Menu
             style={{ width: '100%' , textAlign: 'center'}}
-            defaultSelectedKeys={['1']}
+            defaultSelectedKeys={[this.state.keys]}
             mode={this.state.mode}
+            selectedKeys={[this.state.keys]}
+            onClick={this.handleClick.bind(this)}
             >
                 {
                     this.state.data.map((route) =>
-                        <Menu.Item key={route.key} style={{height:44,lineHeight:'48px',fontSize:'14px',color: '#666666'}} icon={route.icon}>
+                        <Menu.Item key={route.link} style={{height:44,lineHeight:'48px',fontSize:'14px',color: '#666666'}} icon={route.icon}>
                             <Router>
                                 <Link to={route.link}>{route.text}</Link>
                             </Router>
@@ -113,8 +136,8 @@ class Sider extends React.Component {
                 }
             </Menu>
             <div style={{width: '100%',height:'50px',backgroundColor:'rgba(236, 239, 244, 1)',borderTop:'1px solid #ccc',fontSize:'14px',color: '#666666',textAlign: 'center',lineHeight:'50px',cursor: 'pointer'}}><PoweroffOutlined style={{marginRight:'6px'}}/>退出登录</div>
-        </>
+        </div>
     );
   }
 }
-export default Sider
+export default withRouter(Sider)

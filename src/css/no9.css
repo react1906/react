@@ -1,0 +1,107 @@
+/* service组件的样式 */
+.no9{
+    width: 100%;
+    min-height: 500px;
+    font-size: 20px;
+    border: 1px solid #cccccc;
+}
+.no9 .a{
+    height: 80px;
+    border-bottom: 1px solid #cccccc;
+    line-height: 80px;
+    padding: 0 10px;
+    font-size: 14px;
+}
+.no9 .a a{
+    color: #666666;
+    margin-left: 50px;
+    font-family: '微软雅黑 Bold', '微软雅黑 Regular', '微软雅黑';
+    font-weight: 700;
+}
+.no9 .a a:hover{
+    color:#1E90FF;
+}
+.pre{
+    padding: 20px 30px;
+    position: relative;
+}
+
+.pre::before{
+    position: absolute;
+    top: 28px;
+    left: 30px;
+    content: '';
+    width: 4px;
+    height: 20px;
+    background: #1E90FF;
+    margin-right: 10px;
+}
+.pre span:nth-child(1){
+    margin-left: 20px;
+    color: #666666;
+    font-size: 14px;
+    font-weight: bold;
+}
+.pre span:nth-child(2){
+    margin-left: 10px;
+    color: #cccccc;
+    margin-left: 10px;
+    font-size: 14px;
+}
+.prent{
+    display: flex;
+    justify-content: space-between;
+}
+.prent .div div {
+    width: 91px;
+    height: 31px;
+    background: #1E90FF;
+    display: inline-block;
+    font-size: 14px;
+    color: white;
+    text-align: center;
+    line-height: 31px;
+    margin:25px 5px;
+    border-radius: 5px;
+}
+
+/* serviceTow组件的样式 */
+
+.service-tow{
+    margin-left: 30px;
+    padding-right: 8px;
+}
+.mr{
+    margin-right: 10px;
+}
+.mr2{
+    margin-right: 10px;
+    color: #ccc;
+}
+.message{
+    width: 100%;
+    border: 1px solid #1E90FF;
+    color: #00C1DE;
+    height: 40px;
+    line-height: 40px;
+    font-size: 14px;
+    background: #cccccc;
+    margin-bottom: 10px;
+}
+.mb{
+    margin-bottom: 10px;
+}
+.mb2{
+    margin-bottom: 10px;
+    margin-left: 20px;
+}
+.span-icon{
+    margin-left: 10px;
+    color: #1E90FF;
+    font-size: 18px;
+}
+.span-icon2{
+    margin-left: 20px;
+    font-size: 18px;
+
+}

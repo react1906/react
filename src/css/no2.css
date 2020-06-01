@@ -1,0 +1,56 @@
+.qi{
+    box-sizing: border-box;
+}
+.qi>div{
+    width: 100%;
+    border: 1px solid #ccc;
+    padding-bottom: 40px;
+}
+.qi>div>div:nth-of-type(1){
+    display: flex;
+    justify-content: space-between;
+    height: 70px;
+    border-bottom: 1px solid #ccc;
+    line-height: 70px;
+    padding: 0px 15px;
+}
+
+.ben{
+    width: 50%;
+    margin: auto;
+    padding-top: 20px;
+
+}
+.ben>div>h2{
+    font-size: 14px;
+    border-left: 5px solid #0079FE;
+    margin-bottom: 30px;
+    padding-left: 10px;
+}
+
+.ben>div>div>div{
+    margin:20px 0px;
+    line-height: 40px;
+}
+
+.ant-input{
+    width: 400px;
+}
+.ant-select-single{
+    width: 400px;
+}
+
+.ant-input-affix-wrapper-lg{
+    width: 400px !important;
+
+}
+
+.footer{
+    text-align: center;
+    color: #ccc;
+    font-size: 12px;
+    height: 100px;
+    line-height: 26px;
+    padding: 10px 0px;
+    box-sizing: border-box;
+}

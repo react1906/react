@@ -18,3 +18,26 @@
     font-size: 18px;
     margin-left: 40px;
 }
+#components-layout-demo-fixed-sider .logo {
+    height: 32px;
+    background: rgba(255, 255, 255, 0.2);
+    margin: 16px;
+}
+.site-layout .site-layout-background {
+    background: #fff;
+}
+.ant-layout{
+    background-color:rgba(252, 252, 252, 1);
+    padding:0px 20px;
+}
+.ant-modal-mask{
+    background-color: rgba(0, 0, 0, 0.4);
+}
+.allspan span{
+    margin-left: 50px;
+    cursor: pointer;
+    color: #666666;
+    font-family: '微软雅黑 Bold', '微软雅黑 Regular', '微软雅黑';
+    font-weight: 700;
+    font-size: 14px;
+}

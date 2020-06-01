@@ -1,0 +1,136 @@
+.con {
+    box-sizing: border-box;
+}
+
+.inp {
+    border: 1px solid #ccc;
+    background: rgba(3, 3, 3, .04);
+    padding: 20px 15px;
+    height: 120px;
+    /* display: flex; */
+    margin-bottom: 20px;
+
+}
+
+.inp>input {
+    width: 200px;
+    margin: 0px 5px;
+}
+
+.fen {
+    border: 1px solid #ccc;
+    background: rgba(3, 3, 3, .04);
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.fen>div:nth-of-type(1) {
+    padding: 15px 0px;
+    box-sizing: border-box;
+}
+
+
+.asc {
+    border: 1px solid #ccc;
+    text-align: center;
+    line-height: 40px;
+}
+
+.asc>div {
+    display: flex;
+}
+
+.asc>div>div {
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+
+
+.actl-l>div:nth-of-type(1) {
+    border-left: 5px solid #0079FE;
+    box-sizing: border-box;
+    margin: 10px 0px;
+    padding-left: 5px;
+}
+
+.actl-l>div>h2 {
+    font-size: 20px;
+    color: #666;
+}
+
+.actl-f {
+    height: 36px;
+    line-height: 36px;
+    border: 1px solid #ccc;
+    background: rgba(3, 3, 3, .04);
+    display: flex;
+    font-size: 12px;
+}
+
+.actl-f>div {
+    padding: 0px 10px;
+    box-sizing: border-box;
+}
+
+.actl-t {
+    font-size: 14px;
+    line-height: 28px;
+}
+
+.actl-t>div {
+    padding: 15px 0px;
+}
+
+.bg {
+    display: flex;
+    justify-content: space-between;
+}
+
+.bh {
+    border: 1px solid #ccc;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    background: rgba(3, 3, 3, .04);
+    margin: 10px 0px;
+    line-height: 30px;
+}
+
+
+.put {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.put>div {
+    line-height: 40px;
+}
+
+.put>div:nth-of-type(1) {
+    width: 95%;
+}
+
+.put>div:nth-of-type(1)>input {
+    width: 100%;
+    background: none;
+    outline: none;
+    border: none;
+    border: 1px solid #ccc;
+    background: rgba(3, 3, 3, .04);
+}
+
+/* .ant-select{
+    width: 200px !important;
+} */
+
+.put>div:nth-of-type(2) {
+    width: 5%;
+    background: red;
+    border: 1px solid #ccc;
+}
+
+.nnc{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0px;
+}

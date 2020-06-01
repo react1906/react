@@ -13,40 +13,39 @@ import No8 from'./components/no8'
 import No9 from'./components/no9'
 import No10 from'./components/no10'
 import No11 from'./components/no11'
+import Chan from'./components/chan'
+import Xi from './components/xitong'
 
+import { Layout} from 'antd'
+const { Header, Content, Footer} = Layout;
 
 
 class App extends React.Component{
     constructor(props){
         super(props)
     }
-    componentDidMount(){
-        location.href='http://localhost:8080/#/'
-    }
     render(){
         return (
-            <div style={{position:'relative'}}>
-                <div style={{width:'200px'}}>
-                    <Sider/>
-                </div>
-                <div style={{width:'87%',position:'absolute',left:'200px',top:'0'}}>
-                    <Router>
-                        <Switch>
-                            <Route path='/' exact component={No1}/>
-                            <Route path='/no2' component={No2}/>
-                            <Route path='/no3' component={No3}/>
-                            <Route path='/no4' component={No4}/>
-                            <Route path='/no5' component={No5}/>
-                            <Route path='/no6' component={No6}/>
-                            <Route path='/no7' component={No7}/>
-                            <Route path='/no8' component={No8}/>
-                            <Route path='/no9' component={No9}/>
-                            <Route path='/no10' component={No10}/>
-                            <Route path='/no11' component={No11}/>
-                        </Switch>
-                    </Router>
-                </div>
-            </div>
+            <Layout>
+                <Sider/>
+                <Router>
+                    <Switch>
+                        <Route path='/' exact component={No1}/>
+                        <Route path='/no2' component={No2}/>
+                        <Route path='/no3' component={No3}/>
+                        <Route path='/no4' component={No4}/>
+                        <Route path='/no5' component={No5}/>
+                        <Route path='/no6' component={No6}/>
+                        <Route path='/no7' component={No7}/>
+                        <Route path='/no8' component={No8}/>
+                        <Route path='/no9' component={No9}/>
+                        <Route path='/no10' component={No10}/>
+                        <Route path='/no11' component={No11}/>
+                        <Route path='/chan' component={Chan}/>
+                        <Route path='/xi' component={Xi}/>
+                    </Switch>
+                </Router>
+            </Layout>
         )
     }
 }
